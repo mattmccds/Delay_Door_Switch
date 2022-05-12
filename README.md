@@ -18,6 +18,8 @@ The design includes both a printed circuit board and 3d printed enclosure.  No f
 
 ## Delay Door Switch PCB
 
+The PCB is available for order on [PCBWay Projects](https://www.pcbway.com/project/shareproject/Door_Delay_Switch_7a1f7a34.html).
+
 | Front | Back |
 |-------|------|
 | ![](images/pcb_frontside.jpg) | ![](images/pcb_backside.jpg) |
@@ -29,7 +31,7 @@ The design includes both a printed circuit board and 3d printed enclosure.  No f
 
 ### Theory of Operation
 
-For my garage door opener, pressing a normally-open momentary switch shorts two wires together causing the door to open or close.  The wires carry a 24VAC signal which was an import fact when selecting a solid state relay.  Other door openers or devices may differ in operation or signal levels so always check your own wiring.
+For my garage door opener, pressing a normally-open momentary switch shorts two wires together causing the door to open or close.  The wires carry a 24VAC signal which was an important fact when selecting a solid state relay.  Other door openers or devices may differ in operation or signal levels so always check your own wiring.
 
 To emulate a button press I selected a solid-state SPST-NO relay which was rated for AC signals (note that some solid-state relays only allow current in one direction so only work for DC signals).  When activated, the relay shorts the two wires just like the momentary button.  The zero delay button is wired in parallel with the relay so it operates independently from the delay circuit and does not require battery power.
 
